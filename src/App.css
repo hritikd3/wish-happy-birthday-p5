@@ -1,0 +1,37 @@
+body {
+  background: #f7e2e2;
+}
+
+.main {
+  display: grid;
+  height: 100vh;
+  width: auto;
+  animation: loading 0.5s linear;
+}
+.footer {
+  background: #f5b1b1;
+  color: black;
+  text-align: center;
+  padding-bottom: 0px;
+  margin: 2px;
+}
+span {
+  color: rgb(248, 247, 252);
+  background-color: rgb(248, 8, 8);
+  border-radius: 5px;
+  padding: 1px;
+  cursor: pointer;
+}
+
+@keyframes loading {
+  from {
+    scale: 0;
+
+    -webkit-transform: scale(0);
+  }
+
+  to {
+    scale: 1;
+    -webkit-transform: scale(1);
+  }
+}
